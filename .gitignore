@@ -1,0 +1,30 @@
+# Byte-code files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environment
+venv/
+.venv/
+env/
+.env/
+
+# Editor/IDE-specific files
+.idea/ # for PyCharm
+.vscode/ # for VS Code
+*.swp # for Vim
+*.sublime-workspace # for Sublime Text
+
+# Operating System files
+.DS_Store # for macOS
+Thumbs.db # for Windows
+
+# Miscellaneous
+# Logs and databases
+*.log
+*.sqlite3
+
+# Specific environment files
+.python-version # usually too specific to lock a range of versions
+

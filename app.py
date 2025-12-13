@@ -1,16 +1,13 @@
-from langchain.agents import create_agent
+from dotenv import load_dotenv
+import os
 
-def get_weather(city: str) -> str:
-    """Get weather for a given city."""
-    return f"It's always sunny in {city}!"
+load_dotenv()
 
-agent = create_agent(
-    model="gpt-5-mini",
-    tools=[get_weather],
-    system_prompt="You are a helpful assistant",
-)
+print("Hello ai session!!!")
+#print(os.environ.get("OPENAI_API_KEY"))
 
-# Run the agent
-agent.invoke(
-    {"messages": [{"role": "user", "content": "what is the weather in sf"}]}
-)
+#def main():
+#    print("Hello iaisession!!!")
+
+#if __name__ == "__main__":
+#    main()

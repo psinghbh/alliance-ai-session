@@ -26,11 +26,12 @@ https://docs.langchain.com/oss/python/langchain/overview
 
 TODO: Take these slides and try it in NotebookLM. Create one slide out of it.
 
-IMP Objects
-1. Prompt Template
-2. Chat Model
+5. IMP Objects
+i. Prompt Template
+Ref: https://docs.langchain.com/langsmith/manage-prompts-programmatically#push-a-prompt
+ii. Chat Model
 
-LangChain Chain
+6. LangChain Chain
 LangChain chain is a workflow that connects multiple components in linked chain together in a sequence.
 Where the output of one step becomes the input of the next step.
 Each step can be an LLM call, a prompt template, data transformation or tool call, or it can be another chain.

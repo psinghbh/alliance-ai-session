@@ -1,0 +1,38 @@
+1. The Problem (The Why)
+Time: 3min
+Key Concept: LLMs are not enough
+Talking Points: LLMs are powerful but static (knowledge is limited to training data), they are not agentic (can't perform multi-step tasks or use external tools), and they are API-dependent (vendor lock-in).
+
+2. What is LangChain?
+Time: 4
+Key Concept: An Orchestration Framework
+Talking Points:
+Definition: An open-source framework that simplifies the development of applications powered by LLMs. Core Value: It's the "operating system" that connects the brain (LLM) to the hands (Tools/APIs) and the library (Data).
+
+3. The Core Modules (The How)
+Time: 5
+Key Concept: The Building Blocks
+Talking Points:
+Introduce the main components that make up any application: Models, Prompts, Chains/LCEL, Retrieval (RAG), and Agents.
+
+4. LangChain in 2025
+Time: 3
+Key Concept: Evolution and Future
+Talking Points:
+Highlight the shift: LangChain is moving beyond basic Chains to a more powerful, robust agent building experience using LangGraph (for complex control flow). Mention LangSmith for observability and debugging, which is crucial for production.
+
+LangChain Overview:
+https://docs.langchain.com/oss/python/langchain/overview 
+
+TODO: Take these slides and try it in NotebookLM. Create one slide out of it.
+
+IMP Objects
+1. Prompt Template
+2. Chat Model
+
+LangChain Chain
+LangChain chain is a workflow that connects multiple components in linked chain together in a sequence.
+Where the output of one step becomes the input of the next step.
+Each step can be an LLM call, a prompt template, data transformation or tool call, or it can be another chain.
+
+TODO: Need to generate image for this slide

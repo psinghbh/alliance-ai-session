@@ -8,7 +8,7 @@ load_dotenv()
 #print(os.environ.get("OPENAI_API_KEY"))
 llm = ChatOpenAI(temperature=0.1, model="gpt-4o-mini")
 #llm = ChatOpenAI(temperature=0.9, model="gpt-5-mini")
-#llm = ChatOllama(temperature=0.0, model="gpt-5-mini")
+#llm = ChatOllama(temperature=0.0, model="llama-4-8b-instant")
 
 print("Hello ai session!!!")
 

@@ -21,20 +21,18 @@ cat
 
 # 3. CREATE PROMPT
 # -----------------------------------------------------------------------
-summary_template = """
+system_prompt = """
 Tell me joke about {var_info}
 """
 
-summary_prompt_template = PromptTemplate(
-    input_variable=["var_info"], template=summary_template
+final_prompt_template = PromptTemplate(
+    input_variable=["var_info"],
+    template=system_prompt
 )
-
-#prompt_template = PromptTemplate.from_template("Tell me joke about {topic}")
-#prompt_template.invoke({"topic": "cats"})
 
 # 4. SEND PROMPT TO LLM
 # -----------------------------------------------------------------------
-chain = summary_prompt_template | llm
+chain = final_prompt_template | llm
 response = chain.invoke(input={"var_info": var_info})
 
 # 5. PRINT RESPONSE
@@ -42,8 +40,3 @@ response = chain.invoke(input={"var_info": var_info})
 # To see the output:
 print(response.content)
 
-#def main():
-#    print("Hello iaisession!!!")
-
-#if __name__ == "__main__":
-#    main()

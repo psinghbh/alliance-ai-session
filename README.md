@@ -22,3 +22,6 @@ Ref: https://docs.langchain.com/oss/javascript/integrations/tools/tavily_search
 
 # View LLM calls using LangSmith
 pip3 install langsmith
+
+# LangChain Integrated tools
+https://docs.langchain.com/oss/python/integrations/providers/all_providers
